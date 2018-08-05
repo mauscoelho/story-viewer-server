@@ -1,0 +1,13 @@
+type Query {
+  viewers(input: UserInput!): [Viewer!]!
+}
+
+type Viewer {
+  id: ID!
+  username: String!
+}
+
+input UserInput {
+  username: String
+  password: String
+}
