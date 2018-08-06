@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "graphql-yoga": "1.15.1",
-    "instagram-private-api": "mauscoelho/instagram-private-api"
+    "instagram-private-api": "mauscoelho/instagram-private-api",
+    "lodash": "^4.17.10"
   },
   "devDependencies": {
     "@types/bcryptjs": "2.4.1",
