@@ -1,13 +1,22 @@
 type Query {
-  viewers(input: UserInput!): [Viewer!]!
+  viewers(input: UserInput!): ViewersOutput!
+}
+
+type ViewersOutput {
+  viewersCount: Int!
+  viewers: [Viewer!]!
+  notFollowMe: [Viewer!]!
+  notFollowMeCount: Int!
 }
 
 type Viewer {
   id: ID!
   username: String!
+  picture: String!
 }
 
 input UserInput {
   username: String
   password: String
+  storyIndex: Int
 }

@@ -1,8 +1,8 @@
 import { Context } from "../utils";
-import { getViewers } from "../handlers/getViewers";
+import getAllViewers from "../handlers/getAllViewers";
 
 export const Query = {
   viewers(parent, { input }, ctx: Context, info) {
-    return getViewers(input.username, input.password);
+    return getAllViewers(input.username, input.password, input.storyIndex);
   }
 };
